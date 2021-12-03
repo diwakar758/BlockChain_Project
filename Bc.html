@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+  </head>
+  <body>
+    <input type="button" id='script' name="scriptbutton" value=" Run Script " onclick="goPython()">
+
+    <script src="http://0.0.0.0:1001/" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script>
+        function goPython(){
+            $.ajax({
+              url: "C:/Users/Bhardwaj/Downloads/Blockchain.py",
+             context: document.body
+            }).done(function() {
+             alert('finished python script');;
+            });
+        }
+    </script>
+  </body>
+</html>
